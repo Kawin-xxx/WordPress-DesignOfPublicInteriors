@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Montserrat500.woff2") format("woff2"),
+    url("fonts/Montserrat500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Montserrat400.woff2") format("woff2"),
+    url("fonts/Montserrat400.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+  src: url("fMontserrat300.woff2") format("woff2"),
+    url("Montserrat300.woff") format("woff");
+}
+
+body {
+  font-family: "Montserrat", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  min-width: 1110px;
+}
+
+.wrapper {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-main {
+  background-color: #FFFDF8;
+  padding: 60px 0;
+}
+
+.wysiwyg-wrapper h1 {
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  /* не прописываем цвет и выравнивание по центру, так как этот параметр может быть изменен на белый цвет в WYSIWYG редакторе, и на остальных страницах он может быть в секциях без фона */
+}
+
+.wysiwyg-wrapper h2 {
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 500;
+  color: #9f7303;
+}
+
+.wysiwyg-wrapper h3 {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 500;
+  color: #9f7303;
+}
+
+.wysiwyg-wrapper ul {
+  margin-bottom: 50px;
+  padding-left: 22px;
+}
+
+.wysiwyg-wrapper li {
+  margin-bottom: 8px;
+  list-style: none;
+  position: relative;
+}
+
+.wysiwyg-wrapper li::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #F5D581;
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 12px;
+  left: -20px;
+}
+
+.wysiwyg-wrapper blockquote {
+  font-size: 24px;
+  font-weight: 300;
+  color: #9f7303;
+  padding: 40px 100px;
+  border-top: 1px solid #F5D581;
+  border-bottom: 1px solid #F5D581;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 60px auto;
+}
